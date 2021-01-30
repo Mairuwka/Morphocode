@@ -15,3 +15,11 @@ testWebP(function (support) {
 		document.querySelector('body').classList.add('no-webp');
 	}
 });;
+
+let burgerMenu = document.querySelector('.header__burger');
+let iteratingClass = document.querySelectorAll('.header__burger,.header__menu')
+let body = document.body;
+burgerMenu.addEventListener('click', (e) => {
+	iteratingClass.forEach(item => item.classList.toggle("active"))
+	body.classList.toggle('lock');
+});
