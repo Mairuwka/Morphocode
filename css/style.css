@@ -208,11 +208,16 @@ body.ie .ibg img {
 }
 
 .header__link {
+  font-family: "Sailec Bold";
   color: #666666;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.25px;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 22px;
+}
+
+.header__link:hover {
+  color: #000;
 }
 
 /*
@@ -239,6 +244,85 @@ body.ie .ibg img {
 	}
 */
 
+.exploring {
+  padding: 72px 0 0 0;
+}
+
+.exploring__content {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.exploring__container {
+  max-width: 1120px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.exploring__body {
+  padding: 0 20px 0 0;
+  width: 50%;
+}
+
+.exploring__title {
+  font-family: "Sailec Bold";
+  font-size: 58px;
+  line-height: 58px;
+  letter-spacing: 0.25px;
+  color: #4A4A4A;
+  margin: 0 0 20px 0;
+}
+
+.exploring__image img {
+  max-width: 100%;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #434A54;
+}
+
+@media (min-width: 767.98px) {
+  .exploring {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .exploring__image {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    -webkit-transform: translate(-100%, 0px);
+        -ms-transform: translate(-100%, 0px);
+            transform: translate(-100%, 0px);
+  }
+}
+
+@media (max-width: 1120px) {
+  .exploring__title {
+    font-size: -webkit-calc(25px + 33 * ((100vw - 320px) / 760));
+    font-size: calc(25px + 33 * ((100vw - 320px) / 760));
+  }
+}
+
 @media (max-width: 1092px) {
   .container {
     max-width: 970px;
@@ -261,10 +345,14 @@ body.ie .ibg img {
     height: 60px;
   }
 
+  .header__logo {
+    margin: 12px 0 0 0;
+  }
+
   .header__burger {
     display: block;
     position: relative;
-    margin: 0 20px 0 0;
+    margin: 12px 20px 0 0;
     z-index: 3;
     width: 30px;
     height: 20px;
@@ -335,6 +423,7 @@ body.ie .ibg img {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    overflow: auto;
   }
 
   .header__menu.active {
@@ -352,5 +441,15 @@ body.ie .ibg img {
 
   .header__link {
     font-size: 30px;
+  }
+
+  .exploring__body {
+    width: 100%;
+    padding: 0;
+  }
+
+  .exploring__image {
+    padding: 0 20px;
+    text-align: center;
   }
 }
