@@ -535,6 +535,7 @@ body.ie .ibg img {
 }
 
 .start {
+  margin: 0 0 50px 0;
   height: 282px;
   background-color: #EEEEEE;
   display: -webkit-box;
@@ -628,6 +629,88 @@ body.ie .ibg img {
           border-radius: 0px 4px 4px 0px;
 }
 
+.footer {
+  margin-bottom: 75px;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px;
+}
+
+.footer__column {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 25%;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  padding: 0 15px;
+}
+
+.footer__title {
+  font-family: "Sailec Bold";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  margin: 0 0 20px 0;
+}
+
+.footer__list {
+  margin: 0 0 30px 0;
+}
+
+.footer__list_rectangle {
+  position: relative;
+  margin: 0 0 45px 0;
+}
+
+.footer__list_rectangle::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #d6d6b9;
+}
+
+.footer__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.25px;
+  margin: 0 0 10px 0;
+}
+
+.footer__link a {
+  color: #637280;
+}
+
+.footer__link a:hover {
+  color: #000;
+}
+
+.footer__link:last-child {
+  margin: 0;
+}
+
+.footer__reference {
+  margin: 0 10px 0 0;
+}
+
+.footer__reference img {
+  max-width: 19px;
+  height: 19px;
+}
+
+.footer__reference:last-child {
+  margin: 0;
+}
+
 @media (min-width: 767.98px) {
   .exploring {
     display: -webkit-box;
@@ -714,6 +797,11 @@ body.ie .ibg img {
   .subtitle {
     font-size: -webkit-calc(18px + 6 * ((100vw - 320px) / 760));
     font-size: calc(18px + 6 * ((100vw - 320px) / 760));
+  }
+
+  .footer {
+    margin-bottom: -webkit-calc(0px + 75 * ((100vw - 320px) / 760));
+    margin-bottom: calc(0px + 75 * ((100vw - 320px) / 760));
   }
 }
 
@@ -918,6 +1006,19 @@ body.ie .ibg img {
 
   .start__column:last-child {
     margin: 0;
+  }
+
+  .footer__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .footer__column {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 50%;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
   }
 }
 
